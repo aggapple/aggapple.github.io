@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hugo on Let&#39;s tummy time</title>
+    <link>https://aggapple.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on Let&#39;s tummy time</description>
+    <image>
+      <url>https://aggapple.github.io/papermod-cover.png</url>
+      <link>https://aggapple.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Jul 2022 09:59:10 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prologue</title>
+      <link>https://aggapple.github.io/post/prologue/</link>
+      <pubDate>Mon, 11 Jul 2022 09:59:10 +0900</pubDate>
+      
+      <guid>https://aggapple.github.io/post/prologue/</guid>
+      <description>Time waits for no one.</description>
+    </item>
+    
+  </channel>
+</rss>
