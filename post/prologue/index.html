@@ -159,11 +159,11 @@
 
 <article class="post-single">
   <header class="post-header">
-    
+    <div class="breadcrumbs"><a href="https://aggapple.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://aggapple.github.io/post/">Posts</a></div>
     <h1 class="post-title">
       Prologue
     </h1>
-    <div class="post-meta"><span title='2022-07-11 09:59:10 +0900 KST'>July 11, 2022</span>&nbsp;·&nbsp;aggapple
+    <div class="post-meta"><span title='2022-07-11 09:59:10 +0900 KST'>July 11, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;aggapple
 
 </div>
   </header> 
@@ -176,6 +176,14 @@
     <ul class="post-tags">
       <li><a href="https://aggapple.github.io/tags/daily/">daily</a></li>
     </ul>
+<nav class="paginav">
+  <a class="prev" href="https://aggapple.github.io/post/ios/notificationserviceextension%EC%97%90%EC%84%9C-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%9D%8C%EC%9B%90-%EC%9E%AC%EC%83%9D%ED%95%98%EA%B8%B0/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>NotificationServiceExtension에서 다운로드 음원 재생하기</span>
+  </a>
+</nav>
+
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share Prologue on twitter"
@@ -292,6 +300,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
