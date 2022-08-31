@@ -16,7 +16,7 @@
       <pubDate>Wed, 31 Aug 2022 12:29:01 +0900</pubDate>
       
       <guid>https://aggapple.github.io/post/ios/notificationserviceextension%EC%97%90%EC%84%9C-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%9D%8C%EC%9B%90-%EC%9E%AC%EC%83%9D%ED%95%98%EA%B8%B0/</guid>
-      <description>[NotificationServiceExtension에서 다운로드 음원(wav) 재생하기] # Play downloaded sound(wav) file in NotificationServiceExtension 1. 다운로드 저장경로 관련 이슈 앱에서 다운로드 파일을 .documentDirectory 경로에 저장 시 NotificationServiceExtension에서 접근되지 않음 Capabilities의 App Groups를 활용해 파일 접근이 가능하도록 설정
+      <description># Play downloaded sound file in NotificationServiceExtension 1. 다운로드 저장경로 관련 이슈 앱에서 다운로드 파일을 .documentDirectory 경로에 저장 시 NotificationServiceExtension에서 접근되지 않음 Capabilities의 App Groups를 활용해 파일 접근이 가능하도록 설정
 App Groups를 사용하더라도 Apple에서 지정한 음원 공유용 경로가 아니면 음원을 불러오지 못함 Answer by KevinE on Jul 30, 2019 5:11 PM
 The specifics of how your app should work are going to vary a lot depending on your specific use cases and app design, but our general recommendation for push to talk apps is that you shift to using standard push notifications instead of PushKit for message delivery.</description>
     </item>
