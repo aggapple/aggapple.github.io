@@ -11,11 +11,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 07 Sep 2022 14:00:12 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo로 Github Pages에 Contents 배포하기</title>
-      <link>https://aggapple.github.io/post/tools/hugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</link>
+      <title>［hugo］Hugo로 Github Pages에 Contents 배포하기</title>
+      <link>https://aggapple.github.io/post/tools/hugohugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</link>
       <pubDate>Wed, 07 Sep 2022 14:00:12 +0900</pubDate>
       
-      <guid>https://aggapple.github.io/post/tools/hugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</guid>
+      <guid>https://aggapple.github.io/post/tools/hugohugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</guid>
       <description># Distributing contents to Github-pages with Hugo 1. Contents 생성 및 public에 반영하기 # contents 생성 &amp;gt; hugo new post/Demo-post.md # 생성된 contents를 public에 반영하기 &amp;gt; hugo -t PaperMod Contents 생성 후 draft: true 로 설정할 경우 hugo server -D 에서만 표시되므로 배포 시 삭제 또는 false로 변경 2. Contents 배포하기(수동) # public directory로 이동 &amp;gt; cd public # public 배포 &amp;gt; git add . &amp;gt; git commit -m &amp;#39;commit message&amp;#39; &amp;gt; git push origin domain # project root directory로 이동 &amp;gt; cd .</description>
     </item>
     
