@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>hugo on Let&#39;s tummy time</title>
-    <link>https://aggapple.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on Let&#39;s tummy time</description>
+    <title>github on Let&#39;s tummy time</title>
+    <link>https://aggapple.github.io/tags/github/</link>
+    <description>Recent content in github on Let&#39;s tummy time</description>
     <image>
       <url>https://aggapple.github.io/papermod-cover.png</url>
       <link>https://aggapple.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 07 Sep 2022 14:00:12 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 14:00:12 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo로 Github Pages에 Contents 배포하기</title>
       <link>https://aggapple.github.io/post/tools/hugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</link>

@@ -2,13 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aggapple.github.io/categories/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/contents/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/github/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/github-pages/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/hugo/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/post/tools/hugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/post/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/categories/tools/</loc>
+    <lastmod>2022-09-07T14:00:12+09:00</lastmod>
+  </url><url>
     <loc>https://aggapple.github.io/tags/af/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/alamofire/</loc>
-    <lastmod>2022-08-31T12:29:01+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/categories/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/ios/</loc>
@@ -17,25 +44,16 @@
     <loc>https://aggapple.github.io/categories/ios/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
-    <loc>https://aggapple.github.io/</loc>
-    <lastmod>2022-08-31T12:29:01+09:00</lastmod>
-  </url><url>
     <loc>https://aggapple.github.io/tags/notificationserviceextension/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/post/ios/notificationserviceextension%EC%97%90%EC%84%9C-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%9D%8C%EC%9B%90-%EC%9E%AC%EC%83%9D%ED%95%98%EA%B8%B0/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
-    <loc>https://aggapple.github.io/post/</loc>
-    <lastmod>2022-08-31T12:29:01+09:00</lastmod>
-  </url><url>
     <loc>https://aggapple.github.io/tags/sound/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/swift/</loc>
-    <lastmod>2022-08-31T12:29:01+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/tags/</loc>
     <lastmod>2022-08-31T12:29:01+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/daily/</loc>
