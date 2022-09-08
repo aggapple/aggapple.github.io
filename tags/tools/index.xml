@@ -9,14 +9,23 @@
       <link>https://aggapple.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jul 2022 09:59:10 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Sep 2022 16:03:24 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prologue</title>
-      <link>https://aggapple.github.io/post/prologue/</link>
-      <pubDate>Mon, 11 Jul 2022 09:59:10 +0900</pubDate>
+      <title>［atom］Convert MD（MarkDown） to PDF</title>
+      <link>https://aggapple.github.io/post/tools/atomconvert-mdmarkdown-to-pdf/</link>
+      <pubDate>Wed, 07 Sep 2022 16:03:24 +0900</pubDate>
       
-      <guid>https://aggapple.github.io/post/prologue/</guid>
-      <description>Time waits for no one.</description>
+      <guid>https://aggapple.github.io/post/tools/atomconvert-mdmarkdown-to-pdf/</guid>
+      <description># Convert MD（MarkDown） to PDF in Atom 1. Atom에서 MD파일 미리보기 실행 Windows : Ctrl + Shift + M Mac : control + Shift + M 2. 미리보기창 우클릭 후 &amp;ldquo;Save As HTML..&amp;rdquo; 선택 3. 저장된 HTML을 Chrome에서 열기 4. Chrome 메뉴에서 &amp;ldquo;인쇄(P)&amp;ldquo;를 선택 후 인쇄미리보기창 표시 5. 인쇄 대상을 &amp;ldquo;PDF로 저장&amp;quot;으로 지정 후 저장 (옵션_1) 페이지 분할 필요 시 html style에 개행 tag 적용 페이지 분할 tag 정의 &amp;lt;style&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>［hugo］Hugo로 Github Pages에 Contents 배포하기</title>
+      <link>https://aggapple.github.io/post/tools/hugohugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</link>
+      <pubDate>Wed, 07 Sep 2022 14:00:12 +0900</pubDate>
+      
+      <guid>https://aggapple.github.io/post/tools/hugohugo%EB%A1%9C-github-pages%EC%97%90-contents-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0/</guid>
+      <description># Distributing contents to Github-pages with Hugo 1. Contents 생성 및 public에 반영하기 # contents 생성 &amp;gt; hugo new post/Demo-post.md # 생성된 contents를 public에 반영하기 &amp;gt; hugo -t PaperMod Contents 생성 후 draft: true 로 설정할 경우 hugo server -D 에서만 표시되므로 배포 시 삭제 또는 false로 변경 2. Contents 배포하기(수동) # public directory로 이동 &amp;gt; cd public # public 배포 &amp;gt; git add . &amp;gt; git commit -m &amp;#39;commit message&amp;#39; &amp;gt; git push origin domain # project root directory로 이동 &amp;gt; cd .</description>
     </item>
     
   </channel>
