@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>exp on Let&#39;s tummy time</title>
+    <link>https://aggapple.github.io/categories/exp/</link>
+    <description>Recent content in exp on Let&#39;s tummy time</description>
+    <image>
+      <url>https://aggapple.github.io/papermod-cover.png</url>
+      <link>https://aggapple.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Jan 2023 23:11:55 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/categories/exp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android Tech QnA</title>
+      <link>https://aggapple.github.io/post/exp/android-tech-qna/</link>
+      <pubDate>Sun, 22 Jan 2023 23:11:55 +0900</pubDate>
+      
+      <guid>https://aggapple.github.io/post/exp/android-tech-qna/</guid>
+      <description>REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다.</description>
+    </item>
+    
+  </channel>
+</rss>

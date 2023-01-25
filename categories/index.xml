@@ -9,7 +9,16 @@
       <link>https://aggapple.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 07 Sep 2022 16:03:24 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 23:11:55 +0900</lastBuildDate><atom:link href="https://aggapple.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>exp</title>
+      <link>https://aggapple.github.io/categories/exp/</link>
+      <pubDate>Sun, 22 Jan 2023 23:11:55 +0900</pubDate>
+      
+      <guid>https://aggapple.github.io/categories/exp/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>tools</title>
       <link>https://aggapple.github.io/categories/tools/</link>

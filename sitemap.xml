@@ -2,16 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://aggapple.github.io/tags/android/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/post/exp/android-tech-qna/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/categories/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/exp/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/categories/exp/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/post/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/qna/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
+    <loc>https://aggapple.github.io/tags/tech/</loc>
+    <lastmod>2023-01-22T23:11:55+09:00</lastmod>
+  </url><url>
     <loc>https://aggapple.github.io/post/tools/atomconvert-mdmarkdown-to-pdf/</loc>
     <lastmod>2022-09-07T16:03:24+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/atom/</loc>
-    <lastmod>2022-09-07T16:03:24+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/categories/</loc>
-    <lastmod>2022-09-07T16:03:24+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/</loc>
     <lastmod>2022-09-07T16:03:24+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/markdown/</loc>
@@ -21,12 +45,6 @@
     <lastmod>2022-09-07T16:03:24+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/pdf/</loc>
-    <lastmod>2022-09-07T16:03:24+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/post/</loc>
-    <lastmod>2022-09-07T16:03:24+09:00</lastmod>
-  </url><url>
-    <loc>https://aggapple.github.io/tags/</loc>
     <lastmod>2022-09-07T16:03:24+09:00</lastmod>
   </url><url>
     <loc>https://aggapple.github.io/tags/tools/</loc>
