@@ -7,8 +7,9 @@
 <meta name="robots" content="index, follow">
 <title>Android Tech QnA | Let&#39;s tummy time</title>
 <meta name="keywords" content="exp, android, tech, QnA">
-<meta name="description" content="# Android Tech QnA REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
-툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다.">
+<meta name="description" content="# Android Tech QnA [REST API]
+“Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+자원(RESOURCE) - URI 행위(Verb) - HTTP METHOD 표현(Representations) POST를 통해 해당 URI를 요청하면 리소스를 생성합니다. GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다. PUT를 통해 해당 리소스를 수정합니다.">
 <meta name="author" content="aggapple">
 <link rel="canonical" href="https://aggapple.github.io/post/exp/android-tech-qna/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
@@ -29,8 +30,9 @@
 
     </style>
 </noscript><meta property="og:title" content="Android Tech QnA" />
-<meta property="og:description" content="# Android Tech QnA REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
-툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다." />
+<meta property="og:description" content="# Android Tech QnA [REST API]
+“Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+자원(RESOURCE) - URI 행위(Verb) - HTTP METHOD 표현(Representations) POST를 통해 해당 URI를 요청하면 리소스를 생성합니다. GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다. PUT를 통해 해당 리소스를 수정합니다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aggapple.github.io/post/exp/android-tech-qna/" /><meta property="og:image" content="https://aggapple.github.io/papermod-cover.png"/><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-01-22T23:11:55&#43;09:00" />
@@ -40,8 +42,9 @@
 <meta name="twitter:image" content="https://aggapple.github.io/papermod-cover.png"/>
 
 <meta name="twitter:title" content="Android Tech QnA"/>
-<meta name="twitter:description" content="# Android Tech QnA REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
-툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다."/>
+<meta name="twitter:description" content="# Android Tech QnA [REST API]
+“Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.
+자원(RESOURCE) - URI 행위(Verb) - HTTP METHOD 표현(Representations) POST를 통해 해당 URI를 요청하면 리소스를 생성합니다. GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다. PUT를 통해 해당 리소스를 수정합니다."/>
 
 
 <script type="application/ld+json">
@@ -70,12 +73,12 @@
   "@type": "BlogPosting",
   "headline": "Android Tech QnA",
   "name": "Android Tech QnA",
-  "description": "# Android Tech QnA REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.\n툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다.",
+  "description": "# Android Tech QnA [REST API]\n“Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.\n자원(RESOURCE) - URI 행위(Verb) - HTTP METHOD 표현(Representations) POST를 통해 해당 URI를 요청하면 리소스를 생성합니다. GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다. PUT를 통해 해당 리소스를 수정합니다.",
   "keywords": [
     "exp", "android", "tech", "QnA"
   ],
-  "articleBody": "# Android Tech QnA REST API “Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.\n툴 사용 경험 통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, (Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점 사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다. 그러나 Support library에는 여러 가지 문제점이 있었고 이를 개선하면서 새로운 이름을 붙여 다시 나온 것이 Jetpack인 것이다.\n페이징된 데이터의 메모리 내 캐싱. 이렇게 하면 앱이 페이징 데이터로 작업하는 동안 시스템 리소스를 효율적으로 사용할 수 있습니다. 요청 중복 제거 기능이 기본으로 제공되어 앱에서 네트워크 대역폭과 시스템 리소스를 효율적으로 사용할 수 있습니다. 사용자가 로드된 데이터의 끝까지 스크롤할 때 구성 가능한 RecyclerView 어댑터가 자동으로 데이터를 요청합니다. Kotlin 코루틴 및 Flow뿐만 아니라 LiveData 및 RxJava를 최고 수준으로 지원합니다. 새로고침 및 재시도 기능을 포함하여 오류 처리를 기본으로 지원합니다.\nviewmodel, viewbinding, databinding, livedata, room, recyclerview, workmanager, appcompat, permissions, constraintlayout, swiperefreshlayout, viewpager2(세로 방향 지원, 오른쪽에서 왼쪽 지원)\nCoroutine 코루틴은 비동기적으로 실행되는 코드를 간소화하기 위해 Android에서 사용할 수 있는 동시 실행 설계 패턴입니다.\n경량: 코루틴을 실행 중인 스레드를 차단하지 않는 정지를 지원하므로 단일 스레드에서 많은 코루틴을 실행할 수 있습니다. 정지는 많은 동시 작업을 지원하면서도 차단보다 메모리를 절약합니다. 메모리 누수 감소: 구조화된 동시 실행을 사용하여 범위 내에서 작업을 실행합니다. 기본으로 제공되는 취소 지원: 실행 중인 코루틴 계층 구조를 통해 자동으로 취소가 전달됩니다. Jetpack 통합: 많은 Jetpack 라이브러리에 코루틴을 완전히 지원하는 확장 프로그램이 포함되어 있습니다. 일부 라이브러리는 구조화된 동시 실행에 사용할 수 있는 자체 코루틴 범위도 제공합니다. 적용사례 : Rx를 Coroutine으로 전환하면서 ObservableEmitter(방출, null 발행불가))를 suspendCancellableCoroutine으로 전환\nDispatchers.Main - Android 메인 스레드에서 코루틴을 실행하는 디스패처. 이 디스패처는 UI와 상호작용하는 작업을 실행하기 위해서만 사용해야 한다. Dispatchers.IO - 디스크 또는 네트워크 I/O 작업을 실행하는데 최적화되어 있는 디스패처. Dispatchers.Default - CPU를 많이 사용하는 작업을 기본 스레드 외부에서 실행하도록 최적화되어 있는 디스패처. 정렬 작업이나 JSON 파싱 작업 등에 최적화 되어 있다.\nRxJava ReactiveX 는 관찰 가능한(Observable) 스트림을 사용하는 비동기 프로그래밍을 위한 API이다. Reactive Programming 은 데이터 흐름과 변화의 전파와 관련있는 선언적 프로그래밍 패러다임이다. RX = Observable + Observers + Schedulers\nObservable: Observable은 데이터 스트림입니다. Observable은 하나의 스레드에서 다른 스레드로 전달 할 데이터를 압축합니다. 주기적으로 또는 설정에 따라 생애주기동안 한번만 데이터를 방출합니다. Observable은 데이터를 처리하고 다른 구성요소에 전달하는 역할을 한다고 생각하면 됩니다. Observers: Observers는 Observable에 의해 방출된 데이터 스트림을 소비합니다. Observers는 subscribeOn() 메서드를 사용해서 Observable을 구독하고 Observable이 방출하는 데이터를 수신할 수 있다. -Schedulers: Schedulers 는 Observable과 Observers 에게 그들이 실행되어야 할 스레드를 알려줍니다. observeOn() 메서드로 observers에게 관찰해야 할 스레드를 알려줄 수 있다. 또한, scheduleOn() 메서드로 observable이 실행해야 할 스레드를 알려줄 수 있다. subscribeOn() : observable이 어느 스레드에서 동작할 것인지 정의할 수 있음 observeOn() : observer가 어느 스레드에서 동작할 것인지 정의할 수 있음 Schdulers.io()\t- I/O 처리 작업을 할 때 사용하는 스케쥴러 네트워크 요청 처리, 각종 입/출력 작업, 데이터베이스 쿼리 등에 사용 쓰레드 풀에서 쓰레드를 가져오거나 가져올 쓰레드가 없으면 새로운 쓰레드를 생성한다. Schdulers.computation()\t- 논리적인 연산 처리 시, 사용하는 스케쥴러 CPU 코어의 물리적 쓰레드 수를 넘지 않는 범위에서 쓰레들르 생성한다. 대기 시간 없이 빠르게 계산 작업을 수행하기위해 사용한다. Schdulers.newThread()\t- 요청시마다 매번 새로운 쓰레드를 생성한다. 매번 생성되면 쓰레드 비용도 많이 들고, 재사용도 되지 않는다. 명령형 프로그래밍 (Imperative programming) 명령형 프로그래밍은 작성된 코드가 정해진 순서대로 실행되는 방식의 프로그래밍이다. 코드가 순서대로 진행되므로 이해하기 쉽다. 즉 개발자가 작성한 조건문, 반복문, 함수를 따라 컴파일러가 다른 코드로 이동하게 된다.\n반응형 프로그래밍(Reactive Programming) 반응형 프로그래밍은 시간 순으로 들어오는 모든 데이터의 흐름을 스트림(Stream) 으로 처리하며, 하나의 데이터 흐름은 다른 데이터 흐름으로 변형되기도 하고, 여러 데이터 흐름이 하나의 데이터 흐름으로 변경될 수도 있다.\nFlowable\nReactive Streams 인터페이스를 구현함 Subscriber에서 데이터를 처리한다. 데이터 개수를 제어하는 배압 기능이 있음 Subscription으로 전달 받는 데이터 개수를 제어할 수 있다. Subscription으로 구독을 해지한다. Observable\nReactive Streams 인터페이스를 구현하지 않음 Observer에서 데이터를 처리한다. 데이터 개수를 제어하는 배압 기능이 없음 배압 기능이 없기때문에 데이터 개수를 제어할 수 없다. Disposable로 구독을 해지한다. 배압(Back Pressure)이란? Flowable에서 데이터를 통지하는 속도가 Subscriber에서 통지된 데이터를 전달받아 처리하는 속도 보다 빠를 때 밸런스를 맞추기 위해 데이터 통지량을 제어하는 기능을 말한다.\nDeeplink 딥링크는 특정 주소 혹은 값을 입력하면 앱이 실행되거나 앱 내 특정 화면으로 이동시키는 기능을 수행 즉, 딥링크가 사용되면 광고에 반응한 이용자는 앱이 바로 실행되어 특정 화면으로 이동하는 경험을 하게 됩니다. 혹은 앱 설치 후 실행하면 특정 화면으로 바로 이동하게 됩니다(지연된 딥링크)\nURI 스킴 방식 : 앱에 URI 스킴(scheme) 값을 등록하여 딥링크 사용 (ex : appscheme://apphost) 앱링크(App Link) : Android 제공 - 도메인 주소를 이용한 딥링크 사용 (ex : https://applink) 유니버셜 링크 (Universal Link) : iOS 제공 - 도메인 주소를 이용한 딥링크 사용 딥링크로 실행된 경우와 그렇지 않은 경우 action과 data값이 다릅니다. 그렇기 때문에 action과 data를 비교해 딥링크로 실행된 경우를 찾아낼 수 있습니다.\ngit pull request (PR) : 작업 검토 요청 merge : 일반적으로 많이 사용하는 Merge 방식이고 각 상황에 따라 Fast-forward, Recursive 방식으로 병합되며 Fast-forward는 새로운 커밋 메시지 없이 커밋 내용이 적용되며 Recursive는 합병할 때 새로운 커밋 메시지와 함께 커밋 내용이 적용되는 방식이다. Squash and merge : 이전 커밋 내용을 모두 합쳐서 하나의 새로운 커밋 메시지로 만들고 난 다음 이전 커밋 내용을 모두 지우는 병합 방식이다. Rebase and Merge : 커밋 내용을 Base가 되는 브랜치에 재배치하고 추가로 커밋 메시지 없이 병합을 진행하는 방식이다. stash : 아직 마무리하지 않은 작업을 스택에 잠시 저장할 수 있도록 하는 명령어 (저장 후 브랜치 변경 가능) cherry-pick : 다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용하는 명령어 android13 파일 기반 암호화만을 지원하게 되어 각 저장소의 파일이 서로 다른 키로 암호화가 되도록 의무화되었다. 알림 권한이 새롭게 도입 새로운 Wi-Fi 권한이 도입 파일 권한이 파일 및 문서, 사진 및 동영상, 음악 및 기타 오디오로 세분화 SAF(Storage Access Framework)에서 /Android/data 및 /Android/obb 하위 폴더에 액세스할 수 있는 허점이 해결되어 타사 파일 관리자가 /Android/data 및 /Android/obb 폴더에 액세스할 수 없다. AndroidTest Espresso : 구글에서 제작한 안드로이드 UI를 자동 테스트하는 오픈 소스 프레임워크이다. JUnit : 단위테스트용 프레임워크 CI/CD [CI(Continuous Integration) 지속적 통합] 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것 개발자간의 코드 충돌을 방지하기 위한 목적 정기적인 빌드 및 테스트(유닛테스트 및 통합테스트)를 거쳐 공유 레포지터리에 병합되는 과정\n[CD(Continuous Deploy 또는 Delivery) 지속적 배포] 애플리케이션에 적용한 변경사항이 버그 테스트를 거쳐 레포지터리에 자동으로 업로드 되는 것 개발자의 변경 사항을 레포지터리에서 고객이 사용 가능한 프로덕션 환경(실제 서비스를 위한 운영 서버)까지 자동으로 릴리스하는 것 이 레포지터리에서 애플리케이션을 실시간 프로덕션 환경으로 배포된다. 소프트웨어가 항상 신뢰 가능한 수준(합쳐지고 버그테스트를 통과한 상태)에서 배포될 수 있도록 지속적으로 관리하자는 개념 CI의 연장선으로 생각하면 된다.(CD가 되려면 항상 CI가 선행)\n1급함수 일급함수는 객체로 취급되는 함수를 의미하며 다음과 같은 특징을 갖고 있습니다.\n일급함수는 함수가 객체로 취급될 수 있습니다. 일급함수는 함수 객체를 인자로 넘길 수 있어야 합니다. 고차함수 : 고차 함수는 함수를 함수의 매개변수로 받을 수 있고, 함수를 반환할 수 있는 함수입니다. 람다식 : 이름이 없어도 함수 역할을 하는 익명 함수의 하나의 형태\n디자인 패턴 [Delegate Pattern] Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객체에 위임하여 해당 객체가 일을 수행하도록 구성한 디자인 패턴이다. 반드시 상속을 사용해야하는 상황이 아니라면 Composition(구성) 관계(has-a 관계)로 구현하는 것을 권장하는데, Delegate Pattern은 Composition 관계를 사용하는 대표적인 패턴이다.(Kotlin by 키워드 사용)\n함수형 프로그램 함수형 프로그래밍은 거의 모든 것을 순수 함수로 나누어 문제를 해결하는 기법으로, 작은 문제를 해결하기 위한 함수를 작성하여 가독성을 높이고 유지보수를 용이하게 해준다.\n[ 함수형 프로그래밍(Functional Programming)의 특징 ] 부수 효과가 없는 순수 함수를 1급 객체로 간주하여 파라미터나 반환값으로 사용할 수 있으며, 참조 투명성을 지킬 수 있다.\n객체지향 프로그래밍 캡슐화: 변수, 함수를 클래스로 묶어두어 정보를 은닉합니다 상속: 이미 작성된 클래스를 이어 받아 새로운 클래스를 생성하므로 코드의 재사용성을 높여줍니다 다형성: 같은 이름의 변수, 함수가 상황에 따라 다른 의미로 해석될 수 있음을 뜻하는데, 다형성의 특성으로 인해 오버라이딩, 오버로딩이 가능합니다\n[객체 지향 프로그래밍 장점]\n코드의 재사용성 향상 유지보수 용이 코드 가독성 증가 대형 프로젝트에 적합 [특징] 추상화 : 목적과 관련이 없는 부분을 제외해서 필요한 부분을 포착하는 기법 캡슐화 : 외부에 노출할 필요가 없는 정보들은 은닉 (정보은닉) 상속 : 상속이 필요한 이유는 코드의 중복을 없애고, 코드의 재사용이 목적 다형성 : 같은 형태이지만 다른 기능을 하는 것(오버라이딩)\n클린 아키텍쳐 기존의 계층형 아키텍쳐가 가지던 의존성에서 벗어나게 하는 설계를 제공한다. 클린 아키텍처에서는 외부 인터페이스에 독립적으로 구현을 할 수 있도록 한다. 계층형 아키텍처의 의존성은 항상 다음 계층(아래 방향)을 가리킨다. 반대로 클린 아키텍처의 의존성은 원 안쪽을 향한다. 즉, 바깥쪽 원에 해당하는 어떠한 것들도 안쪽 원에는 영향을 주지 않는다. 클린 아키텍처는 확장 가능하고 테스트가 가능한 프로그램(TDD에 용이한)을 만드는 것에 용이한 구조를 제공한다. 이 아키텍처는 바깥 레이어가 정해지지 않아도 서비스를 구축해나갈 수 있도록 하는 것을 목표로 한다.\n[의존성 역전이란?] 객체 지향 프로그래밍에서 의존 관계 역전 원칙은 소프트웨어 모듈들을 분리하는 특정 형식을 지칭한다. 이 원칙을 따르면, 상위 계층(정책 결정)이 하위 계층(세부 사항)에 의존하는 전통적인 의존 관계를 반전(역전)시킴으로써 상위 계층이 하위 계층의 구현으로부터 독립되게 할 수 있다. 단순하게 말하면, 인터페이스로 만들고, 도메인 계층에서 인터페이스를 참조하면 됩니다.\nSOLID [단일 책임 원칙 (Single responsibility principle)] 한 클래스는 하나의 책임만 가져야 한다. [개방-폐쇄 원칙 (Open/closed principle)] 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다. [리스코프 치환 원칙 (Liskov substitution principle)] 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다. [인터페이스 분리 원칙 (Interface segregation principle)] 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다. [의존관계 역전 원칙 (Dependency inversion principle)] 프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.\nsyncronize annotation\nMVC, MVP, MVVM\n안드로이드 데이터 복원\n뷰모델, 리이브데이터, 아키텍쳐,\n비동기처리를 어떻게 사용하고있는지?\nAPI 어떤툴을이용하는지?\n함수형프로그램의 정의, 어떤의미인지?, 함수형프로그램의 위배되는부분이 있다면?\n디자인패턴 이용해서 복잡한 내용을 해결한 경험이있는지?\n아키텍쳐 관련된 프레임웍(레이어링) OOP에서 말하는 빌더패턴이라던지 복잡한 요구사항을 해결한 경험이있는지? 복잡한 코드들을 패턴을 이용해서 해결한 경험했었는지?\n스태틱메서드는 상속이되는지? 만약 상속을 하게되면 어떤문제가 발생될지?\nUI스레드에서 호출되는것이 보장되는 메서드가있을때, 싱크로나이즈드 키워드를 걸게되면 어떤의미가있는지?\n싱크로나이즈드 키워드(어노테이션)를 걸었을때 효과가 어떤것이있는지?\n코드내에서API를 호출할때 여러군데에서 빈번하게 호출됨, 한번에 여러번 호출되면 안됨\n펑션에 싱크로나이즈드를 걸었을때, 내부에서 쓰레드 생성해서 API호출\n쓰레드 내부에서 싱크로나이즈를 걸어서 API호출 두 가지 방식 중 어느것이 바람직한지? 이유는?\nOOP의 원칙중 DI에 대한 설명가능한지?\n앱을사용하다가 메모리가부족해 액티비티가 종료되는 경우에 액티비가 종료되기 이전에 데이터 복원가능한 기능이 있는지?\n어플리케이션에서 OS에서 관리하는 키 저장소를 사용하기 위해서는 어떤처리가 필요하고 주의해야할 점과 제약사항 등(OS에서 암호화해서 저장할 수 있는 기능에 대한 설명 필요)\n실무에서는 키를 안전하게 보관하기 위해서 사용하는 솔루션이 어떤게 있는지?\n",
-  "wordCount" : "1643",
+  "articleBody": "# Android Tech QnA [REST API]\n“Representational State Transfer” 의 약자 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.\n자원(RESOURCE) - URI 행위(Verb) - HTTP METHOD 표현(Representations) POST를 통해 해당 URI를 요청하면 리소스를 생성합니다. GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다. PUT를 통해 해당 리소스를 수정합니다.(PATCH는 일부만 수정) DELETE를 통해 리소스를 삭제합니다.\n[Jetpack 페이징 라이브러리를 사용하여 얻을 수 있는 이점]\n사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다. 그러나 Support library에는 여러 가지 문제점이 있었고 이를 개선하면서 새로운 이름을 붙여 다시 나온 것이 Jetpack인 것이다.\n페이징된 데이터의 메모리 내 캐싱. 이렇게 하면 앱이 페이징 데이터로 작업하는 동안 시스템 리소스를 효율적으로 사용할 수 있습니다. 요청 중복 제거 기능이 기본으로 제공되어 앱에서 네트워크 대역폭과 시스템 리소스를 효율적으로 사용할 수 있습니다. 사용자가 로드된 데이터의 끝까지 스크롤할 때 구성 가능한 RecyclerView 어댑터가 자동으로 데이터를 요청합니다. Kotlin 코루틴 및 Flow뿐만 아니라 LiveData 및 RxJava를 최고 수준으로 지원합니다. 새로고침 및 재시도 기능을 포함하여 오류 처리를 기본으로 지원합니다.\nviewmodel, viewbinding, databinding, livedata, room, recyclerview, workmanager, appcompat, permissions, constraintlayout, swiperefreshlayout, viewpager2(세로 방향 지원, 오른쪽에서 왼쪽 지원)\n[Coroutine]\n코루틴은 비동기적으로 실행되는 코드를 간소화하기 위해 Android에서 사용할 수 있는 동시 실행 설계 패턴입니다.\n경량: 코루틴을 실행 중인 스레드를 차단하지 않는 정지를 지원하므로 단일 스레드에서 많은 코루틴을 실행할 수 있습니다. 정지는 많은 동시 작업을 지원하면서도 차단보다 메모리를 절약합니다. 메모리 누수 감소: 구조화된 동시 실행을 사용하여 범위 내에서 작업을 실행합니다. 기본으로 제공되는 취소 지원: 실행 중인 코루틴 계층 구조를 통해 자동으로 취소가 전달됩니다. Jetpack 통합: 많은 Jetpack 라이브러리에 코루틴을 완전히 지원하는 확장 프로그램이 포함되어 있습니다. 일부 라이브러리는 구조화된 동시 실행에 사용할 수 있는 자체 코루틴 범위도 제공합니다. 적용사례 : Rx를 Coroutine으로 전환하면서 ObservableEmitter(방출, null 발행불가))를 suspendCancellableCoroutine으로 전환\nDispatchers.Main - Android 메인 스레드에서 코루틴을 실행하는 디스패처. 이 디스패처는 UI와 상호작용하는 작업을 실행하기 위해서만 사용해야 한다. Dispatchers.IO - 디스크 또는 네트워크 I/O 작업을 실행하는데 최적화되어 있는 디스패처. Dispatchers.Default - CPU를 많이 사용하는 작업을 기본 스레드 외부에서 실행하도록 최적화되어 있는 디스패처. 정렬 작업이나 JSON 파싱 작업 등에 최적화 되어 있다.\n[RxJava]\nReactiveX 는 관찰 가능한(Observable) 스트림을 사용하는 비동기 프로그래밍을 위한 API이다. Reactive Programming 은 데이터 흐름과 변화의 전파와 관련있는 선언적 프로그래밍 패러다임이다. RX = Observable + Observers + Schedulers\nObservable: Observable은 데이터 스트림입니다. Observable은 하나의 스레드에서 다른 스레드로 전달 할 데이터를 압축합니다. 주기적으로 또는 설정에 따라 생애주기동안 한번만 데이터를 방출합니다. Observable은 데이터를 처리하고 다른 구성요소에 전달하는 역할을 한다고 생각하면 됩니다. Observers: Observers는 Observable에 의해 방출된 데이터 스트림을 소비합니다. Observers는 subscribeOn() 메서드를 사용해서 Observable을 구독하고 Observable이 방출하는 데이터를 수신할 수 있다. -Schedulers: Schedulers 는 Observable과 Observers 에게 그들이 실행되어야 할 스레드를 알려줍니다. observeOn() 메서드로 observers에게 관찰해야 할 스레드를 알려줄 수 있다. 또한, scheduleOn() 메서드로 observable이 실행해야 할 스레드를 알려줄 수 있다. subscribeOn() : observable이 어느 스레드에서 동작할 것인지 정의할 수 있음 observeOn() : observer가 어느 스레드에서 동작할 것인지 정의할 수 있음 Schdulers.io()\t- I/O 처리 작업을 할 때 사용하는 스케쥴러 네트워크 요청 처리, 각종 입/출력 작업, 데이터베이스 쿼리 등에 사용 쓰레드 풀에서 쓰레드를 가져오거나 가져올 쓰레드가 없으면 새로운 쓰레드를 생성한다. Schdulers.computation()\t- 논리적인 연산 처리 시, 사용하는 스케쥴러 CPU 코어의 물리적 쓰레드 수를 넘지 않는 범위에서 쓰레들르 생성한다. 대기 시간 없이 빠르게 계산 작업을 수행하기위해 사용한다. Schdulers.newThread()\t- 요청시마다 매번 새로운 쓰레드를 생성한다. 매번 생성되면 쓰레드 비용도 많이 들고, 재사용도 되지 않는다. Flowable\nReactive Streams 인터페이스를 구현함 Subscriber에서 데이터를 처리한다. 데이터 개수를 제어하는 배압 기능이 있음 Subscription으로 전달 받는 데이터 개수를 제어할 수 있다. Subscription으로 구독을 해지한다. Observable\nReactive Streams 인터페이스를 구현하지 않음 Observer에서 데이터를 처리한다. 데이터 개수를 제어하는 배압 기능이 없음 배압 기능이 없기때문에 데이터 개수를 제어할 수 없다. Disposable로 구독을 해지한다. 배압(Back Pressure)이란? Flowable에서 데이터를 통지하는 속도가 Subscriber에서 통지된 데이터를 전달받아 처리하는 속도 보다 빠를 때 밸런스를 맞추기 위해 데이터 통지량을 제어하는 기능을 말한다.\n[프로그래밍 패러다임]\n명령형 프로그래밍 (Imperative programming) 명령형 프로그래밍은 작성된 코드가 정해진 순서대로 실행되는 방식의 프로그래밍이다. 코드가 순서대로 진행되므로 이해하기 쉽다. 즉 개발자가 작성한 조건문, 반복문, 함수를 따라 컴파일러가 다른 코드로 이동하게 된다.\n반응형 프로그래밍(Reactive Programming) 반응형 프로그래밍은 시간 순으로 들어오는 모든 데이터의 흐름을 스트림(Stream) 으로 처리하며, 하나의 데이터 흐름은 다른 데이터 흐름으로 변형되기도 하고, 여러 데이터 흐름이 하나의 데이터 흐름으로 변경될 수도 있다.\n[함수형 프로그래밍(Reactive Programming)]\n함수형 프로그래밍은 대입문을 사용하지 않는 프로그래밍이며, 작은 문제를 해결하기 위한 함수를 작성한다. 부수 효과가 없는 순수 함수를 1급 객체로 간주하여 파라미터나 반환값으로 사용할 수 있으며, 참조 투명성을 지킬 수 있다.\n\u003c부수효과(Side Effect)\u003e 여기서 부수효과(Side Effect)란 다음과 같은 변화 또는 변화가 발생하는 작업을 의미한다.\n변수의 값이 변경됨\n자료 구조를 제자리에서 수정함\n객체의 필드값을 설정함\n예외나 오류가 발생하며 실행이 중단됨\n콘솔 또는 파일 I/O가 발생함\n\u003c순수 함수(Pure Function)\u003e 그리고 이러한 부수 효과(Side Effect)들을 제거한 함수들을 순수 함수(Pure Function)이라고 부르며, 함수형 프로그래밍에서 사용하는 함수는 이러한 순수 함수들이다.\nMemory or I/O의 관점에서 Side Effect가 없는 함수\n함수의 실행이 외부에 영향을 끼치지 않는 함수\n\u003c순수 함수(Pure Function)의 장점\u003e 순수 함수(Pure Function)을 이용하면 얻을 수 있는 효과는 다음과 같다.\n함수 자체가 독립적이며 Side-Effect가 없기 때문에 Thread에 안전성을 보장받을 수 있다.\nThread에 안정성을 보장받아 병렬 처리를 동기화 없이 진행할 수 있다.\n\u003c1급 객체(First-Class Object)\u003e 그리고 1급 객체란 다음과 같은 것들이 가능한 객체를 의미한다.\n변수나 데이터 구조 안에 담을 수 있다.\n파라미터로 전달 할 수 있다.\n반환값으로 사용할 수 있다.\n할당에 사용된 이름과 무관하게 고유한 구별이 가능하다.\n함수형 프로그래밍에서 함수는 1급 객체로 취급받기 때문에 위의 예제에서 본 것 처럼 함수를 파라미터로 넘기는 등의 작업이 가능한 것이다. 또한 우리가 일반적으로 알고 개발했던 함수들은 함수형 프로그래밍에서 정의하는 순수 함수들과는 다르다는 것을 인지해야 한다.\n\u003c참조 투명성(Referential Transparency)\u003e 마지막으로 참조 투명성(Referential Transparency)이란 다음과 같다. 동일한 인자에 대해 항상 동일한 결과를 반환해야 한다. 참조 투명성을 통해 기존의 값은 변경되지 않고 유지된다.(Immutable Data) 명령형 프로그래밍과 함수형 프로그래밍에서 사용하는 함수는 부수효과의 유/무에 따라 차이가 있다. 그에 따라 함수가 참조에 투명한지 안한지 나뉘어 지는데, 참조에 투명하다는 것은 말 그대로 함수를 실행하여도 어떠한 상태의 변화 없이 항상 동일한 결과를 반환하여 항상 동일하게(투명하게) 실행 결과를 참조(예측)할 수 있다는 것을 의미한다.\n즉, 어떤 함수 f에 어떠한 인자 x를 넣고 f를 실행하게 되면, f는 입력된 인자에만 의존하므로 항상 f(x)라는 동일한 결과를 얻는다는 것을 의미한다. 부작용을 제거하여 프로그램의 동작을 이해하고 예측을 용이하게 하는 것은 함수형 프로그래밍으로 개발하려는 핵심 동기 중 하나이다. 그리고 이러한 부분인 병렬 처리 환경에서 개발할 때 Race Condition에 대한 비용을 줄여준다. 왜냐하면 함수형 프로그래밍에서는 값의 대입이 없이 항상 동일한 실행에 대해 동일한 결과를 반환하기 때문이다.\n[객체지향 프로그래밍]\n캡슐화: 변수, 함수를 클래스로 묶어두어 정보를 은닉합니다 상속: 이미 작성된 클래스를 이어 받아 새로운 클래스를 생성하므로 코드의 재사용성을 높여줍니다 다형성: 같은 이름의 변수, 함수가 상황에 따라 다른 의미로 해석될 수 있음을 뜻하는데, 다형성의 특성으로 인해 오버라이딩, 오버로딩이 가능합니다\n[객체 지향 프로그래밍 장점]\n코드의 재사용성 향상 유지보수 용이 코드 가독성 증가 대형 프로젝트에 적합 [특징] 추상화 : 목적과 관련이 없는 부분을 제외해서 필요한 부분을 포착하는 기법 캡슐화 : 외부에 노출할 필요가 없는 정보들은 은닉 (정보은닉) 상속 : 상속이 필요한 이유는 코드의 중복을 없애고, 코드의 재사용이 목적 다형성 : 같은 형태이지만 다른 기능을 하는 것(오버라이딩)\n[클린 아키텍쳐]\n기존의 계층형 아키텍쳐가 가지던 의존성에서 벗어나게 하는 설계를 제공한다. 클린 아키텍처에서는 외부 인터페이스에 독립적으로 구현을 할 수 있도록 한다. 계층형 아키텍처의 의존성은 항상 다음 계층(아래 방향)을 가리킨다. 반대로 클린 아키텍처의 의존성은 원 안쪽을 향한다. 즉, 바깥쪽 원에 해당하는 어떠한 것들도 안쪽 원에는 영향을 주지 않는다. 클린 아키텍처는 확장 가능하고 테스트가 가능한 프로그램(TDD에 용이한)을 만드는 것에 용이한 구조를 제공한다. 이 아키텍처는 바깥 레이어가 정해지지 않아도 서비스를 구축해나갈 수 있도록 하는 것을 목표로 한다.\n[의존성 역전이란?] 객체 지향 프로그래밍에서 의존 관계 역전 원칙은 소프트웨어 모듈들을 분리하는 특정 형식을 지칭한다. 이 원칙을 따르면, 상위 계층(정책 결정)이 하위 계층(세부 사항)에 의존하는 전통적인 의존 관계를 반전(역전)시킴으로써 상위 계층이 하위 계층의 구현으로부터 독립되게 할 수 있다. 단순하게 말하면, 인터페이스로 만들고, 도메인 계층에서 인터페이스를 참조하면 됩니다.\n[SOLID]\n[단일 책임 원칙 (Single responsibility principle)] 한 클래스는 하나의 책임만 가져야 한다. [개방-폐쇄 원칙 (Open/closed principle)] 소프트웨어 요소는 확장에는 열려 있으나 변경에는 닫혀 있어야 한다. [리스코프 치환 원칙 (Liskov substitution principle)] 프로그램의 객체는 프로그램의 정확성을 깨뜨리지 않으면서 하위 타입의 인스턴스로 바꿀 수 있어야 한다. [인터페이스 분리 원칙 (Interface segregation principle)] 특정 클라이언트를 위한 인터페이스 여러 개가 범용 인터페이스 하나보다 낫다. [의존관계 역전 원칙 (Dependency inversion principle)] 프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.\n[Deeplink]\n딥링크는 특정 주소 혹은 값을 입력하면 앱이 실행되거나 앱 내 특정 화면으로 이동시키는 기능을 수행 즉, 딥링크가 사용되면 광고에 반응한 이용자는 앱이 바로 실행되어 특정 화면으로 이동하는 경험을 하게 됩니다. 혹은 앱 설치 후 실행하면 특정 화면으로 바로 이동하게 됩니다(지연된 딥링크)\nURI 스킴 방식 : 앱에 URI 스킴(scheme) 값을 등록하여 딥링크 사용 (ex : appscheme://apphost) 앱링크(App Link) : Android 제공 - 도메인 주소를 이용한 딥링크 사용 (ex : https://applink) 유니버셜 링크 (Universal Link) : iOS 제공 - 도메인 주소를 이용한 딥링크 사용 딥링크로 실행된 경우와 그렇지 않은 경우 action과 data값이 다릅니다. 그렇기 때문에 action과 data를 비교해 딥링크로 실행된 경우를 찾아낼 수 있습니다.\n[git]\npull request (PR) : 작업 검토 요청 merge : 일반적으로 많이 사용하는 Merge 방식이고 각 상황에 따라 Fast-forward, Recursive 방식으로 병합되며 Fast-forward는 새로운 커밋 메시지 없이 커밋 내용이 적용되며 Recursive는 합병할 때 새로운 커밋 메시지와 함께 커밋 내용이 적용되는 방식이다. Squash and merge : 이전 커밋 내용을 모두 합쳐서 하나의 새로운 커밋 메시지로 만들고 난 다음 이전 커밋 내용을 모두 지우는 병합 방식이다. Rebase and Merge : 커밋 내용을 Base가 되는 브랜치에 재배치하고 추가로 커밋 메시지 없이 병합을 진행하는 방식이다. stash : 아직 마무리하지 않은 작업을 스택에 잠시 저장할 수 있도록 하는 명령어 (저장 후 브랜치 변경 가능) cherry-pick : 다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용하는 명령어 [android13]\n파일 기반 암호화만을 지원하게 되어 각 저장소의 파일이 서로 다른 키로 암호화가 되도록 의무화되었다. 알림 권한이 새롭게 도입 새로운 Wi-Fi 권한이 도입 파일 권한이 파일 및 문서, 사진 및 동영상, 음악 및 기타 오디오로 세분화 SAF(Storage Access Framework)에서 /Android/data 및 /Android/obb 하위 폴더에 액세스할 수 있는 허점이 해결되어 타사 파일 관리자가 /Android/data 및 /Android/obb 폴더에 액세스할 수 없다. [AndroidTest]\nEspresso : 구글에서 제작한 안드로이드 UI를 자동 테스트하는 오픈 소스 프레임워크이다. JUnit : 단위테스트용 프레임워크 [CI/CD]\n[CI(Continuous Integration) 지속적 통합] 개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것 개발자간의 코드 충돌을 방지하기 위한 목적 정기적인 빌드 및 테스트(유닛테스트 및 통합테스트)를 거쳐 공유 레포지터리에 병합되는 과정\n[CD(Continuous Deploy 또는 Delivery) 지속적 배포] 애플리케이션에 적용한 변경사항이 버그 테스트를 거쳐 레포지터리에 자동으로 업로드 되는 것 개발자의 변경 사항을 레포지터리에서 고객이 사용 가능한 프로덕션 환경(실제 서비스를 위한 운영 서버)까지 자동으로 릴리스하는 것 이 레포지터리에서 애플리케이션을 실시간 프로덕션 환경으로 배포된다. 소프트웨어가 항상 신뢰 가능한 수준(합쳐지고 버그테스트를 통과한 상태)에서 배포될 수 있도록 지속적으로 관리하자는 개념 CI의 연장선으로 생각하면 된다.(CD가 되려면 항상 CI가 선행)\n[1급함수]\n일급함수는 객체로 취급되는 함수를 의미하며 다음과 같은 특징을 갖고 있습니다.\n일급함수는 함수가 객체로 취급될 수 있습니다. 일급함수는 함수 객체를 인자로 넘길 수 있어야 합니다. 고차함수 : 고차 함수는 함수를 함수의 매개변수로 받을 수 있고, 함수를 반환할 수 있는 함수입니다. 람다식 : 이름이 없어도 함수 역할을 하는 익명 함수의 하나의 형태\n[디자인 패턴]\n[Delegate Pattern] Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객체에 위임하여 해당 객체가 일을 수행하도록 구성한 디자인 패턴이다. 반드시 상속을 사용해야하는 상황이 아니라면 Composition(구성) 관계(has-a 관계)로 구현하는 것을 권장하는데, Delegate Pattern은 Composition 관계를 사용하는 대표적인 패턴이다.(Kotlin by 키워드 사용)\n[shared preferences]\nSharedPreferences 단점 SharedPreferences를 적절하게 사용하지 못했을 때 여러 단점들을 찾을 수 있다.\n실제 XML 파일 I/O 작업을 하는 것으로 UI Thread에서 작업할 경우 안전하지 않다. Runtime Exception으로부터 안전하지 않다. XML 파일이기에 외부에서 쉽게 파일을 읽을 수 있다. (DataStore도 읽을 수는 있다) 비동기 API를 제공하지만 Listener를 통해서만 값을 읽을 수 있다. Type-Safety를 제공하지 않는다. [DataStore]\nDataStore? 도입에서 설명했듯이 SharedPreferences를 대체하기 위해 Jetpack에서 발표한 라이브러리다.\nKotlin coroutine과 Flow를 사용하여 비동기적으로, 일관되게 데이터를 저장할 수 있다. DataStore에는 SharedPreferences처럼 key-value 형태로 저장할 수 있는 Preferences DataStore, 커스텀 데이터 타입을 Protocol buffer를 통하여 저장하는 Proto DataStore로 나뉜다. Preferences DataStore은 아쉽게도 Type-Safety를 제공하지는 않는다. 그러나 Proto DataStore에서 미리 정의된 schema를 통하여 Type-Safety를 보장한다. syncronize annotation\n툴 사용 경험\n통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등) 보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화) 푸시솔루션 : GCM, FCM, 파이어베이스 : Analytics, RemoteConfig, Crashlytics 디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정) 스케쥴 : 두레이(NHN), Slack, JIRA 등 MVC, MVP, MVVM\n안드로이드 데이터 복원\n뷰모델, 리이브데이터, 아키텍쳐,\n비동기처리를 어떻게 사용하고있는지?\nAPI 어떤툴을이용하는지?\n함수형프로그램의 정의, 어떤의미인지?, 함수형프로그램의 위배되는부분이 있다면?\n디자인패턴 이용해서 복잡한 내용을 해결한 경험이있는지?\n아키텍쳐 관련된 프레임웍(레이어링) OOP에서 말하는 빌더패턴이라던지 복잡한 요구사항을 해결한 경험이있는지? 복잡한 코드들을 패턴을 이용해서 해결한 경험했었는지?\n스태틱메서드는 상속이되는지? 만약 상속을 하게되면 어떤문제가 발생될지?\nUI스레드에서 호출되는것이 보장되는 메서드가있을때, 싱크로나이즈드 키워드를 걸게되면 어떤의미가있는지?\n싱크로나이즈드 키워드(어노테이션)를 걸었을때 효과가 어떤것이있는지?\n코드내에서API를 호출할때 여러군데에서 빈번하게 호출됨, 한번에 여러번 호출되면 안됨\n펑션에 싱크로나이즈드를 걸었을때, 내부에서 쓰레드 생성해서 API호출\n쓰레드 내부에서 싱크로나이즈를 걸어서 API호출 두 가지 방식 중 어느것이 바람직한지? 이유는?\nOOP의 원칙중 DI에 대한 설명가능한지?\n앱을사용하다가 메모리가부족해 액티비티가 종료되는 경우에 액티비가 종료되기 이전에 데이터 복원가능한 기능이 있는지?\n어플리케이션에서 OS에서 관리하는 키 저장소를 사용하기 위해서는 어떤처리가 필요하고 주의해야할 점과 제약사항 등(OS에서 암호화해서 저장할 수 있는 기능에 대한 설명 필요)\n실무에서는 키를 안전하게 보관하기 위해서 사용하는 솔루션이 어떤게 있는지?\n",
+  "wordCount" : "2088",
   "inLanguage": "en",
   "datePublished": "2023-01-22T23:11:55+09:00",
   "dateModified": "2023-01-22T23:11:55+09:00",
@@ -166,36 +169,30 @@
     <h1 class="post-title">
       Android Tech QnA
     </h1>
-    <div class="post-meta"><span title='2023-01-22 23:11:55 +0900 KST'>January 22, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;aggapple
+    <div class="post-meta"><span title='2023-01-22 23:11:55 +0900 KST'>January 22, 2023</span>&nbsp;·&nbsp;10 min&nbsp;·&nbsp;aggapple
 
 </div>
   </header> 
   <div class="post-content"><h4 id="-android-tech-qna"># Android Tech QnA<a hidden class="anchor" aria-hidden="true" href="#-android-tech-qna">#</a></h4>
 <hr>
-<ul>
-<li>REST API</li>
-</ul>
+<p>[REST API]</p>
 <blockquote>
 <p>“Representational State Transfer” 의 약자
 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다.
 REST는 기본적으로 웹의 기존 기술과 HTTP 프로토콜을 그대로 활용하기 때문에 웹의 장점을 최대한 활용할 수 있는 아키텍처 스타일이다.</p>
-</blockquote>
 <ul>
-<li>툴 사용 경험</li>
+<li>자원(RESOURCE) - URI</li>
+<li>행위(Verb) - HTTP METHOD</li>
+<li>표현(Representations)</li>
 </ul>
 <blockquote>
-<ul>
-<li>통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등)</li>
-<li>보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화)</li>
-<li>푸시솔루션 : GCM, FCM,</li>
-<li>파이어베이스 : Analytics, RemoteConfig, Crashlytics</li>
-<li>디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정)</li>
-<li>스케쥴 : 두레이(NHN), Slack,</li>
-</ul>
+<p>POST를 통해 해당 URI를 요청하면 리소스를 생성합니다.
+GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져온다.
+PUT를 통해 해당 리소스를 수정합니다.(PATCH는 일부만 수정)
+DELETE를 통해 리소스를 삭제합니다.</p>
 </blockquote>
-<ul>
-<li>(Jetpack)페이징 라이브러리를 사용하여 얻을 수 있는 이점</li>
-</ul>
+</blockquote>
+<p>[Jetpack 페이징 라이브러리를 사용하여 얻을 수 있는 이점]</p>
 <blockquote>
 <p>사실 Jetpack이 나오기 전 Support library라고 하는 라이브러리 모음집이 이미 존재했었다.
 그러나 Support library에는 여러 가지 문제점이 있었고 이를 개선하면서 새로운 이름을 붙여 다시 나온 것이 Jetpack인 것이다.</p>
@@ -208,9 +205,7 @@ Kotlin 코루틴 및 Flow뿐만 아니라 LiveData 및 RxJava를 최고 수준�
 <p>viewmodel, viewbinding, databinding, livedata, room, recyclerview, workmanager, appcompat, permissions, constraintlayout, swiperefreshlayout, viewpager2(세로 방향 지원, 오른쪽에서 왼쪽 지원)</p>
 </blockquote>
 </blockquote>
-<ul>
-<li>Coroutine</li>
-</ul>
+<p>[Coroutine]</p>
 <blockquote>
 <p>코루틴은 비동기적으로 실행되는 코드를 간소화하기 위해 Android에서 사용할 수 있는 동시 실행 설계 패턴입니다.</p>
 <ul>
@@ -228,9 +223,7 @@ Dispatchers.IO - 디스크 또는 네트워크 I/O 작업을 실행하는데 최
 Dispatchers.Default - CPU를 많이 사용하는 작업을 기본 스레드 외부에서 실행하도록 최적화되어 있는 디스패처. 정렬 작업이나 JSON 파싱 작업 등에 최적화 되어 있다.</p>
 </blockquote>
 </blockquote>
-<ul>
-<li>RxJava</li>
-</ul>
+<p>[RxJava]</p>
 <blockquote>
 <p>ReactiveX 는 관찰 가능한(Observable) 스트림을 사용하는 비동기 프로그래밍을 위한 API이다.
 Reactive Programming 은 데이터 흐름과 변화의 전파와 관련있는 선언적 프로그래밍 패러다임이다.
@@ -250,14 +243,6 @@ CPU 코어의 물리적 쓰레드 수를 넘지 않는 범위에서 쓰레들르
 <li>Schdulers.newThread()	- 요청시마다 매번 새로운 쓰레드를 생성한다.
 매번 생성되면 쓰레드 비용도 많이 들고, 재사용도 되지 않는다.</li>
 </ul>
-<blockquote>
-<p>명령형 프로그래밍 (Imperative programming)
-명령형 프로그래밍은 작성된 코드가 정해진 순서대로 실행되는 방식의 프로그래밍이다. 코드가 순서대로 진행되므로 이해하기 쉽다. 즉 개발자가 작성한 조건문, 반복문, 함수를 따라 컴파일러가 다른 코드로 이동하게 된다.</p>
-</blockquote>
-<blockquote>
-<p>반응형 프로그래밍(Reactive Programming)
-반응형 프로그래밍은 시간 순으로 들어오는 모든 데이터의 흐름을 스트림(Stream) 으로 처리하며, 하나의 데이터 흐름은 다른 데이터 흐름으로 변형되기도 하고, 여러 데이터 흐름이 하나의 데이터 흐름으로 변경될 수도 있다.</p>
-</blockquote>
 <blockquote>
 <p>Flowable</p>
 <ul>
@@ -279,104 +264,95 @@ CPU 코어의 물리적 쓰레드 수를 넘지 않는 범위에서 쓰레들르
 Flowable에서 데이터를 통지하는 속도가 Subscriber에서 통지된 데이터를 전달받아 처리하는 속도 보다 빠를 때 밸런스를 맞추기 위해 데이터 통지량을 제어하는 기능을 말한다.</p>
 </blockquote>
 </blockquote>
-<ul>
-<li>Deeplink</li>
-</ul>
-<blockquote>
-<p>딥링크는 특정 주소 혹은 값을 입력하면 앱이 실행되거나 앱 내 특정 화면으로 이동시키는 기능을 수행
-즉, 딥링크가 사용되면 광고에 반응한 이용자는 앱이 바로 실행되어 특정 화면으로 이동하는 경험을 하게 됩니다. 혹은 앱 설치 후 실행하면 특정 화면으로 바로 이동하게 됩니다(지연된 딥링크)</p>
-<ul>
-<li>URI 스킴 방식 : 앱에 URI 스킴(scheme) 값을 등록하여 딥링크 사용 (ex : appscheme://apphost)</li>
-<li>앱링크(App Link) : Android 제공 - 도메인 주소를 이용한 딥링크 사용 (ex : https://applink)</li>
-<li>유니버셜 링크 (Universal Link) : iOS 제공  - 도메인 주소를 이용한 딥링크 사용</li>
-</ul>
-<blockquote>
-<p>딥링크로 실행된 경우와 그렇지 않은 경우 action과 data값이 다릅니다. 그렇기 때문에 action과 data를 비교해 딥링크로 실행된 경우를 찾아낼 수 있습니다.</p>
-</blockquote>
-</blockquote>
-<ul>
-<li>git</li>
-</ul>
+<p>[프로그래밍 패러다임]</p>
 <blockquote>
 <ul>
-<li>pull request (PR) : 작업 검토 요청</li>
-<li>merge : 일반적으로 많이 사용하는 Merge 방식이고 각 상황에 따라 Fast-forward, Recursive 방식으로 병합되며 Fast-forward는 새로운 커밋 메시지 없이 커밋 내용이 적용되며 Recursive는 합병할 때 새로운 커밋 메시지와 함께 커밋 내용이 적용되는 방식이다.</li>
-<li>Squash and merge : 이전 커밋 내용을 모두 합쳐서 하나의 새로운 커밋 메시지로 만들고 난 다음 이전 커밋 내용을 모두 지우는 병합 방식이다.</li>
-<li>Rebase and Merge : 커밋 내용을 Base가 되는 브랜치에 재배치하고 추가로 커밋 메시지 없이 병합을 진행하는 방식이다.</li>
-<li>stash : 아직 마무리하지 않은 작업을 스택에 잠시 저장할 수 있도록 하는 명령어 (저장 후 브랜치 변경 가능)</li>
-<li>cherry-pick : 다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용하는 명령어</li>
+<li>
+<p>명령형 프로그래밍 (Imperative programming)
+명령형 프로그래밍은 작성된 코드가 정해진 순서대로 실행되는 방식의 프로그래밍이다. 코드가 순서대로 진행되므로 이해하기 쉽다. 즉 개발자가 작성한 조건문, 반복문, 함수를 따라 컴파일러가 다른 코드로 이동하게 된다.</p>
+</li>
+<li>
+<p>반응형 프로그래밍(Reactive Programming)
+반응형 프로그래밍은 시간 순으로 들어오는 모든 데이터의 흐름을 스트림(Stream) 으로 처리하며, 하나의 데이터 흐름은 다른 데이터 흐름으로 변형되기도 하고, 여러 데이터 흐름이 하나의 데이터 흐름으로 변경될 수도 있다.</p>
+</li>
 </ul>
 </blockquote>
-<ul>
-<li>android13</li>
-</ul>
+<p>[함수형 프로그래밍(Reactive Programming)]</p>
 <blockquote>
-<ul>
-<li>파일 기반 암호화만을 지원하게 되어 각 저장소의 파일이 서로 다른 키로 암호화가 되도록 의무화되었다.</li>
-<li>알림 권한이 새롭게 도입</li>
-<li>새로운 Wi-Fi 권한이 도입</li>
-<li>파일 권한이 파일 및 문서, 사진 및 동영상, 음악 및 기타 오디오로 세분화</li>
-<li>SAF(Storage Access Framework)에서 /Android/data 및 /Android/obb 하위 폴더에 액세스할 수 있는 허점이 해결되어 타사 파일 관리자가 /Android/data 및 /Android/obb 폴더에 액세스할 수 없다.</li>
-</ul>
-</blockquote>
-<ul>
-<li>AndroidTest</li>
-</ul>
-<blockquote>
-<ul>
-<li>Espresso : 구글에서 제작한 안드로이드 UI를 자동 테스트하는 오픈 소스 프레임워크이다.</li>
-<li>JUnit : 단위테스트용 프레임워크</li>
-</ul>
-</blockquote>
-<ul>
-<li>CI/CD</li>
-</ul>
-<blockquote>
-<p>[CI(Continuous Integration) 지속적 통합]
-개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것
-개발자간의 코드 충돌을 방지하기 위한 목적
-정기적인 빌드 및 테스트(유닛테스트 및 통합테스트)를 거쳐 공유 레포지터리에 병합되는 과정</p>
-<p>[CD(Continuous Deploy 또는 Delivery) 지속적 배포]
-애플리케이션에 적용한 변경사항이 버그 테스트를 거쳐 레포지터리에 자동으로 업로드 되는 것
-개발자의 변경 사항을 레포지터리에서 고객이 사용 가능한 프로덕션 환경(실제 서비스를 위한 운영 서버)까지 자동으로 릴리스하는 것
-이 레포지터리에서 애플리케이션을 실시간 프로덕션 환경으로 배포된다.
-소프트웨어가 항상 신뢰 가능한 수준(합쳐지고 버그테스트를 통과한 상태)에서 배포될 수 있도록 지속적으로 관리하자는 개념
-CI의 연장선으로 생각하면 된다.(CD가 되려면 항상 CI가 선행)</p>
-</blockquote>
-<ul>
-<li>1급함수</li>
-</ul>
-<blockquote>
-<p>일급함수는 객체로 취급되는 함수를 의미하며 다음과 같은 특징을 갖고 있습니다.</p>
-<ul>
-<li>일급함수는 함수가 객체로 취급될 수 있습니다.</li>
-<li>일급함수는 함수 객체를 인자로 넘길 수 있어야 합니다.</li>
-</ul>
-<blockquote>
-<p>고차함수 : 고차 함수는 함수를 함수의 매개변수로 받을 수 있고, 함수를 반환할 수 있는 함수입니다.
-람다식 : 이름이 없어도 함수 역할을 하는 익명 함수의 하나의 형태</p>
-</blockquote>
-</blockquote>
-<ul>
-<li>디자인 패턴</li>
-</ul>
-<blockquote>
-<p>[Delegate Pattern]
-Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객체에 위임하여 해당 객체가 일을 수행하도록 구성한 디자인 패턴이다. 반드시 상속을 사용해야하는 상황이 아니라면 Composition(구성) 관계(has-a 관계)로 구현하는 것을 권장하는데, Delegate Pattern은 Composition 관계를 사용하는 대표적인 패턴이다.(Kotlin by 키워드 사용)</p>
-</blockquote>
-<ul>
-<li>함수형 프로그램</li>
-</ul>
-<blockquote>
-<p>함수형 프로그래밍은 거의 모든 것을 순수 함수로 나누어 문제를 해결하는 기법으로, 작은 문제를 해결하기 위한 함수를 작성하여 가독성을 높이고 유지보수를 용이하게 해준다.</p>
-<blockquote>
-<p>[ 함수형 프로그래밍(Functional Programming)의 특징 ]
+<p>함수형 프로그래밍은 대입문을 사용하지 않는 프로그래밍이며, 작은 문제를 해결하기 위한 함수를 작성한다.
 부수 효과가 없는 순수 함수를 1급 객체로 간주하여 파라미터나 반환값으로 사용할 수 있으며, 참조 투명성을 지킬 수 있다.</p>
-</blockquote>
+<ul>
+<li>
+<p>&lt;부수효과(Side Effect)&gt;
+여기서 부수효과(Side Effect)란 다음과 같은 변화 또는 변화가 발생하는 작업을 의미한다.</p>
+</li>
+<li>
+<p>변수의 값이 변경됨</p>
+</li>
+<li>
+<p>자료 구조를 제자리에서 수정함</p>
+</li>
+<li>
+<p>객체의 필드값을 설정함</p>
+</li>
+<li>
+<p>예외나 오류가 발생하며 실행이 중단됨</p>
+</li>
+<li>
+<p>콘솔 또는 파일 I/O가 발생함</p>
+</li>
+<li>
+<p>&lt;순수 함수(Pure Function)&gt;
+그리고 이러한 부수 효과(Side Effect)들을 제거한 함수들을 순수 함수(Pure Function)이라고 부르며, 함수형 프로그래밍에서 사용하는 함수는 이러한 순수 함수들이다.</p>
+</li>
+<li>
+<p>Memory or I/O의 관점에서 Side Effect가 없는 함수</p>
+</li>
+<li>
+<p>함수의 실행이 외부에 영향을 끼치지 않는 함수</p>
+</li>
+<li>
+<p>&lt;순수 함수(Pure Function)의 장점&gt;
+순수 함수(Pure Function)을 이용하면 얻을 수 있는 효과는 다음과 같다.</p>
+</li>
+<li>
+<p>함수 자체가 독립적이며 Side-Effect가 없기 때문에 Thread에 안전성을 보장받을 수 있다.</p>
+</li>
+<li>
+<p>Thread에 안정성을 보장받아 병렬 처리를 동기화 없이 진행할 수 있다.</p>
+</li>
+<li>
+<p>&lt;1급 객체(First-Class Object)&gt;
+그리고 1급 객체란 다음과 같은 것들이 가능한 객체를 의미한다.</p>
+</li>
+<li>
+<p>변수나 데이터 구조 안에 담을 수 있다.</p>
+</li>
+<li>
+<p>파라미터로 전달 할 수 있다.</p>
+</li>
+<li>
+<p>반환값으로 사용할 수 있다.</p>
+</li>
+<li>
+<p>할당에 사용된 이름과 무관하게 고유한 구별이 가능하다.</p>
+</li>
+</ul>
+<blockquote>
+<p>함수형 프로그래밍에서 함수는 1급 객체로 취급받기 때문에 위의 예제에서 본 것 처럼 함수를 파라미터로 넘기는 등의 작업이 가능한 것이다. 또한 우리가 일반적으로 알고 개발했던 함수들은 함수형 프로그래밍에서 정의하는 순수 함수들과는 다르다는 것을 인지해야 한다.</p>
 </blockquote>
 <ul>
-<li>객체지향 프로그래밍</li>
+<li>&lt;참조 투명성(Referential Transparency)&gt;
+마지막으로 참조 투명성(Referential Transparency)이란 다음과 같다.</li>
 </ul>
+<blockquote>
+<p>동일한 인자에 대해 항상 동일한 결과를 반환해야 한다.
+참조 투명성을 통해 기존의 값은 변경되지 않고 유지된다.(Immutable Data)
+명령형 프로그래밍과 함수형 프로그래밍에서 사용하는 함수는 부수효과의 유/무에 따라 차이가 있다. 그에 따라 함수가 참조에 투명한지 안한지 나뉘어 지는데, 참조에 투명하다는 것은 말 그대로 함수를 실행하여도 어떠한 상태의 변화 없이 항상 동일한 결과를 반환하여 항상 동일하게(투명하게) 실행 결과를 참조(예측)할 수 있다는 것을 의미한다.</p>
+<p>즉, 어떤 함수 f에 어떠한 인자 x를 넣고 f를 실행하게 되면, f는 입력된 인자에만 의존하므로 항상 f(x)라는 동일한 결과를 얻는다는 것을 의미한다. 부작용을 제거하여 프로그램의 동작을 이해하고 예측을 용이하게 하는 것은 함수형 프로그래밍으로 개발하려는 핵심 동기 중 하나이다. 그리고 이러한 부분인 병렬 처리 환경에서 개발할 때 Race Condition에 대한 비용을 줄여준다. 왜냐하면 함수형 프로그래밍에서는 값의 대입이 없이 항상 동일한 실행에 대해 동일한 결과를 반환하기 때문이다.</p>
+</blockquote>
+</blockquote>
+<p>[객체지향 프로그래밍]</p>
 <blockquote>
 <p>캡슐화: 변수, 함수를 클래스로 묶어두어 정보를 은닉합니다
 상속: 이미 작성된 클래스를 이어 받아 새로운 클래스를 생성하므로 코드의 재사용성을 높여줍니다
@@ -398,9 +374,7 @@ Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객
 다형성 : 같은 형태이지만 다른 기능을 하는 것(오버라이딩)</p>
 </blockquote>
 </blockquote>
-<ul>
-<li>클린 아키텍쳐</li>
-</ul>
+<p>[클린 아키텍쳐]</p>
 <blockquote>
 <p>기존의 계층형 아키텍쳐가 가지던 의존성에서 벗어나게 하는 설계를 제공한다.
 클린 아키텍처에서는 외부 인터페이스에 독립적으로 구현을 할 수 있도록 한다.
@@ -415,9 +389,7 @@ Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객
 단순하게 말하면, 인터페이스로 만들고, 도메인 계층에서 인터페이스를 참조하면 됩니다.</p>
 </blockquote>
 </blockquote>
-<ul>
-<li>SOLID</li>
-</ul>
+<p>[SOLID]</p>
 <blockquote>
 <p>[단일 책임 원칙 (Single responsibility principle)]
 한 클래스는 하나의 책임만 가져야 한다.
@@ -430,10 +402,120 @@ Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객
 [의존관계 역전 원칙 (Dependency inversion principle)]
 프로그래머는 추상화에 의존해야지, 구체화에 의존하면 안된다. 의존성 주입은 이 원칙을 따르는 방법 중 하나다.</p>
 </blockquote>
+<p>[Deeplink]</p>
+<blockquote>
+<p>딥링크는 특정 주소 혹은 값을 입력하면 앱이 실행되거나 앱 내 특정 화면으로 이동시키는 기능을 수행
+즉, 딥링크가 사용되면 광고에 반응한 이용자는 앱이 바로 실행되어 특정 화면으로 이동하는 경험을 하게 됩니다. 혹은 앱 설치 후 실행하면 특정 화면으로 바로 이동하게 됩니다(지연된 딥링크)</p>
+<ul>
+<li>URI 스킴 방식 : 앱에 URI 스킴(scheme) 값을 등록하여 딥링크 사용 (ex : appscheme://apphost)</li>
+<li>앱링크(App Link) : Android 제공 - 도메인 주소를 이용한 딥링크 사용 (ex : https://applink)</li>
+<li>유니버셜 링크 (Universal Link) : iOS 제공  - 도메인 주소를 이용한 딥링크 사용</li>
+</ul>
+<blockquote>
+<p>딥링크로 실행된 경우와 그렇지 않은 경우 action과 data값이 다릅니다. 그렇기 때문에 action과 data를 비교해 딥링크로 실행된 경우를 찾아낼 수 있습니다.</p>
+</blockquote>
+</blockquote>
+<p>[git]</p>
+<blockquote>
+<ul>
+<li>pull request (PR) : 작업 검토 요청</li>
+<li>merge : 일반적으로 많이 사용하는 Merge 방식이고 각 상황에 따라 Fast-forward, Recursive 방식으로 병합되며 Fast-forward는 새로운 커밋 메시지 없이 커밋 내용이 적용되며 Recursive는 합병할 때 새로운 커밋 메시지와 함께 커밋 내용이 적용되는 방식이다.</li>
+<li>Squash and merge : 이전 커밋 내용을 모두 합쳐서 하나의 새로운 커밋 메시지로 만들고 난 다음 이전 커밋 내용을 모두 지우는 병합 방식이다.</li>
+<li>Rebase and Merge : 커밋 내용을 Base가 되는 브랜치에 재배치하고 추가로 커밋 메시지 없이 병합을 진행하는 방식이다.</li>
+<li>stash : 아직 마무리하지 않은 작업을 스택에 잠시 저장할 수 있도록 하는 명령어 (저장 후 브랜치 변경 가능)</li>
+<li>cherry-pick : 다른 브랜치에 있는 커밋을 선택적으로 내 브랜치에 적용시킬 때 사용하는 명령어</li>
+</ul>
+</blockquote>
+<p>[android13]</p>
+<blockquote>
+<ul>
+<li>파일 기반 암호화만을 지원하게 되어 각 저장소의 파일이 서로 다른 키로 암호화가 되도록 의무화되었다.</li>
+<li>알림 권한이 새롭게 도입</li>
+<li>새로운 Wi-Fi 권한이 도입</li>
+<li>파일 권한이 파일 및 문서, 사진 및 동영상, 음악 및 기타 오디오로 세분화</li>
+<li>SAF(Storage Access Framework)에서 /Android/data 및 /Android/obb 하위 폴더에 액세스할 수 있는 허점이 해결되어 타사 파일 관리자가 /Android/data 및 /Android/obb 폴더에 액세스할 수 없다.</li>
+</ul>
+</blockquote>
+<p>[AndroidTest]</p>
+<blockquote>
+<ul>
+<li>Espresso : 구글에서 제작한 안드로이드 UI를 자동 테스트하는 오픈 소스 프레임워크이다.</li>
+<li>JUnit : 단위테스트용 프레임워크</li>
+</ul>
+</blockquote>
+<p>[CI/CD]</p>
+<blockquote>
+<p>[CI(Continuous Integration) 지속적 통합]
+개발을 하면서 ‘코드에 대한 통합’을 ‘지속적’으로 진행함으로써 품질을 유지하자는 것
+개발자간의 코드 충돌을 방지하기 위한 목적
+정기적인 빌드 및 테스트(유닛테스트 및 통합테스트)를 거쳐 공유 레포지터리에 병합되는 과정</p>
+<p>[CD(Continuous Deploy 또는 Delivery) 지속적 배포]
+애플리케이션에 적용한 변경사항이 버그 테스트를 거쳐 레포지터리에 자동으로 업로드 되는 것
+개발자의 변경 사항을 레포지터리에서 고객이 사용 가능한 프로덕션 환경(실제 서비스를 위한 운영 서버)까지 자동으로 릴리스하는 것
+이 레포지터리에서 애플리케이션을 실시간 프로덕션 환경으로 배포된다.
+소프트웨어가 항상 신뢰 가능한 수준(합쳐지고 버그테스트를 통과한 상태)에서 배포될 수 있도록 지속적으로 관리하자는 개념
+CI의 연장선으로 생각하면 된다.(CD가 되려면 항상 CI가 선행)</p>
+</blockquote>
+<p>[1급함수]</p>
+<blockquote>
+<p>일급함수는 객체로 취급되는 함수를 의미하며 다음과 같은 특징을 갖고 있습니다.</p>
+<ul>
+<li>일급함수는 함수가 객체로 취급될 수 있습니다.</li>
+<li>일급함수는 함수 객체를 인자로 넘길 수 있어야 합니다.</li>
+</ul>
+<blockquote>
+<p>고차함수 : 고차 함수는 함수를 함수의 매개변수로 받을 수 있고, 함수를 반환할 수 있는 함수입니다.
+람다식 : 이름이 없어도 함수 역할을 하는 익명 함수의 하나의 형태</p>
+</blockquote>
+</blockquote>
+<p>[디자인 패턴]</p>
+<blockquote>
+<p>[Delegate Pattern]
+Delegate Pattern이란 어떤 기능을 자신이 수행하지 않고 다른 객체에 위임하여 해당 객체가 일을 수행하도록 구성한 디자인 패턴이다. 반드시 상속을 사용해야하는 상황이 아니라면 Composition(구성) 관계(has-a 관계)로 구현하는 것을 권장하는데, Delegate Pattern은 Composition 관계를 사용하는 대표적인 패턴이다.(Kotlin by 키워드 사용)</p>
+</blockquote>
+<p>[shared preferences]</p>
+<blockquote>
+<p>SharedPreferences 단점
+SharedPreferences를 적절하게 사용하지 못했을 때 여러 단점들을 찾을 수 있다.</p>
+<ul>
+<li>실제 XML 파일 I/O 작업을 하는 것으로 UI Thread에서 작업할 경우 안전하지 않다.</li>
+<li>Runtime Exception으로부터 안전하지 않다.</li>
+<li>XML 파일이기에 외부에서 쉽게 파일을 읽을 수 있다. (DataStore도 읽을 수는 있다)</li>
+<li>비동기 API를 제공하지만 Listener를 통해서만 값을 읽을 수 있다.</li>
+<li>Type-Safety를 제공하지 않는다.</li>
+</ul>
+</blockquote>
+<p>[DataStore]</p>
+<blockquote>
+<p>DataStore?
+도입에서 설명했듯이 SharedPreferences를 대체하기 위해 Jetpack에서 발표한 라이브러리다.</p>
+<ul>
+<li>Kotlin coroutine과 Flow를 사용하여 비동기적으로, 일관되게 데이터를 저장할 수 있다.</li>
+<li>DataStore에는 SharedPreferences처럼 key-value 형태로 저장할 수 있는 Preferences DataStore,
+커스텀 데이터 타입을 Protocol buffer를 통하여 저장하는 Proto DataStore로 나뉜다.</li>
+<li>Preferences DataStore은 아쉽게도 Type-Safety를 제공하지는 않는다.</li>
+<li>그러나 Proto DataStore에서 미리 정의된 schema를 통하여 Type-Safety를 보장한다.</li>
+</ul>
+</blockquote>
 <ul>
 <li>
 <p>syncronize annotation</p>
 </li>
+<li>
+<p>툴 사용 경험</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>통신 : 레트로핏, okhttp(클라이언트 설정으로 인터셉터 사용-리다이렉션 등)</li>
+<li>보안솔루션 : 프로가드, 덱스가드, 보안키패드연동, 백신연동(V3, 앱가드) 등(무결성, 난독화)</li>
+<li>푸시솔루션 : GCM, FCM,</li>
+<li>파이어베이스 : Analytics, RemoteConfig, Crashlytics</li>
+<li>디자인 : 제플린, 피그마(신규 프로젝트부터 적용 예정)</li>
+<li>스케쥴 : 두레이(NHN), Slack, JIRA 등</li>
+</ul>
+</blockquote>
+<ul>
 <li>
 <p>MVC, MVP, MVVM</p>
 </li>
